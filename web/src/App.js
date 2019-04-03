@@ -7,17 +7,14 @@ import {
 import {connect} from "react-redux";
 
 import DashboardPage from "./pages/MainPage";
-import OrderPage from "./pages/OrderPage";
-import TipsPage from "./pages/TipsPage";
-import ViewOrderPage from "./pages/ViewOrderPage";
-import PaymentPage from "./pages/PaymentPage";
-import LoginPage from "./pages/LoginPage";
-import SuccessPage from "./pages/SuccessPage";
-import LogoutPage from "./pages/LogOutPage"
+import AboutPage from "./pages/AboutPage";
+import ContactPage from "./pages/ContactPage";
+import PrivacyPage from "./pages/PrivacyPage";
+import ProductPage from "./pages/ProductPage";
+import Sitemap from "./pages/Sitemap";
+
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
-import RegisterPage from './pages/CreateUserPage';
-import ContactPage from './pages/ContactPage';
 
 import logo from './logo.svg';
 import './App.css';
@@ -32,15 +29,11 @@ class App extends Component {
                 <NavBar />
                 <Route path="/" exact component={DashboardPage} />
                 <Route path="/dashboard" exact component={DashboardPage} />
-                <Route path="/pay" exact component={PaymentPage} />
-                <Route path="/order" exact component={OrderPage} />
-                <Route path="/view" exact component={ViewOrderPage} />
-                <Route path="/login" exact component={LoginPage} />
-                <Route path="/logout" exact component={LogoutPage} />
-                <Route path="/tips" exact component={TipsPage} />
-                <Route path="/success" exact component={SuccessPage} />
-                <Route path="/create" exact component={RegisterPage} />
                 <Route path="/contact" exact component={ContactPage} />
+                <Route path="/about" exact component={AboutPage} />
+                <Route path="/product" exact component={ProductPage} />
+                <Route path="/privacy" exact component={PrivacyPage} />
+                <Route path="/sitemap" exact component={Sitemap} />
                 <Footer/>
             </div>
           </Router> 
