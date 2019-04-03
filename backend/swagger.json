@@ -18,7 +18,7 @@
       "application/json"
     ],
     "paths": {
-      "/create": {
+      "/send": {
         "post": {
           "description": "Create new item",
           "parameters": [
@@ -45,31 +45,7 @@
           }
         }
       },
-      "/read": {
-        "post": {
-          "summary": "Get item with given ID",
-          "parameters": [
-            {
-              "name": "items",
-              "in": "body",
-              "description": "items",
-              "required": true,
-              "schema": {
-              "$ref": "#/definitions/Itemread"
-          }            
-          }
-          ],
-          "responses": {
-            "200": {
-              "description": "Item is found",
-              "schema": {
-                "$ref": "#/definitions/Item"
-              }
-            }
-          }
-        }
-      }
-    },
+      ,
     "definitions": {
       "Item": {
         "properties": {
@@ -77,13 +53,10 @@
             "type": "string",
             "uniqueItems": true
           },
-          "location": {
+          "email": {
             "type": "string"
           },
-          "description": {
-            "type": "string"
-          },
-          "price": {
+          "message": {
             "type": "string"
           }
         }
