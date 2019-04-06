@@ -19,7 +19,6 @@
     "morgan": "^1.9.1",
     "nodemailer": "^6.0.0",
     "path": "^0.12.7",
-    "stripe": "^6.28.0",
     "swagger-ui-express": "^4.0.2"
   }
 }

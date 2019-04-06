@@ -19,58 +19,17 @@
     ],
     "paths": {
       "/send": {
-        "post": {
-          "description": "Create new item",
-          "parameters": [
-            {
-              "name": "items",
-              "in": "body",
-              "description": "items",
-              "required": true,
-              "schema": {
-              "$ref": "#/definitions/Item"
-          }            
-          }
-          ],
+        "get": {
+          "description": "get updates",
           "produces": [
             "application/json"
           ],
           "responses": {
             "200": {
-              "description": "New user is created",
-              "schema": {
-                "$ref": "#/definitions/Item"
-              }
+              "description": "New user is created"
             }
           }
         }
-      },
-      ,
-    "definitions": {
-      "Item": {
-        "properties": {
-          "name": {
-            "type": "string",
-            "uniqueItems": true
-          },
-          "email": {
-            "type": "string"
-          },
-          "message": {
-            "type": "string"
-          }
-        }
-      },
-      "Itemread": {
-        "properties": {
-          "location": {
-            "type": "string"
-          }
-        }
-      },
-      "Items": {
-        "type": "array",
-        "$ref": "#/definitions/Item"
       }
     }
   }
