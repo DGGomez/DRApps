@@ -15,18 +15,18 @@ class DashboardPage extends Component {
   render() {
     return (
       <div className="container">
+      <div class="header"><h1>Welcome</h1></div>
       <div class="form-group">
-          <div><p>Hey our product increases the strength and potentcy of the weed you grow. If that sounds good to you order some!</p></div>
-          <div><Link to ="/order" className="btn btn-default btn-lg btn-block">Order</Link></div>
+          <div><p>Hey there welcome to DownRampApps come take a look at our apps</p></div>
       </div>
       <div class="form-group">
-          <div><p>already ordered?</p></div>
-          <div><Link to ="/view" className="btn btn-default btn-lg btn-block">View</Link></div>
+          <div><p>Take a look at our blog.</p></div>
       </div>
       <div class="form-group">
-          <div><p>Also here are some growing tips =D</p></div>
-          <div><Link to ="/tips" className="btn btn-default btn-lg btn-block">Tips!</Link></div>
-      </div>
+          <div><p>Got any cool ideas let us know. Got any comments or concerns leave us a message.
+            You can even buy one of our apps. Anyway hope you enjoy our stuff!
+            </p></div>
+      </div> 
       </div>
 
     );
