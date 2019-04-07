@@ -10,10 +10,10 @@ class LeftMenu extends Component {
           <a href="/">Home</a>
         </Menu.Item>
         <Menu.Item key="product">
-          <a href="/product">Tips</a>
+          <a href="/product">Products</a>
         </Menu.Item>
         <Menu.Item key="about">
-          <a href="/about">Tips</a>
+          <a href="/about">About</a>
         </Menu.Item>
         <Menu.Item key="contact">
           <a href="/contact">Contact Us</a>

@@ -6,7 +6,7 @@ class Footer extends Component {
       <footer style={styles.footerStyle} className="text-center navbar-fixed-bottom .bg-secondary">
       
       <div className="copyright-text">
-        <p>© Weed Stuff 2019</p>
+        <p>© Down Ramp Apps 2019</p>
       </div>
       </footer>
     );

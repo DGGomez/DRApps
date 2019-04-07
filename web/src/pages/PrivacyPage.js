@@ -17,9 +17,7 @@ class AboutPage extends Component {
       <div className="container">
         <div className="title"><h1>About</h1></div>
         <div className="body"><p>
-        Hello, Welcome to Down Ramp Apps. We are a group of programs that design, create, and maintain apps.
-        If you want to buy an app or give us a suggestion go to the contact page and leave us a message. Check
-        out our other projects while you're here.
+        We don't keep your shit
         </p></div>
         
       </div>
