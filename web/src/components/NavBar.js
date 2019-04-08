@@ -19,7 +19,7 @@ onClose = () => {
 render() {
     return (
         <div>
-        <div className="profile-body__container"><h1>Welcome to Weed Soil(name pending)</h1></div>
+        <div className="profile-body__container"><h1>Welcome to Down Ramp Apps</h1></div>
         <nav className="menuBar">
           <div className="logo">
             <a href="/">logo</a>
@@ -32,7 +32,7 @@ render() {
               <span className="barsBtn"></span>
             </Button>
             <Drawer
-              title="Basic Drawer"
+              title=""
               placement="right"
               closable={false}
               onClose={this.onClose}
