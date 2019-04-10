@@ -1,5 +1,4 @@
 const express = require('express');
-var authenticate = require('../middleware/authenticate');
 
 module.exports = function(app, db) {
 var dataList = require('../controllers/dataController');

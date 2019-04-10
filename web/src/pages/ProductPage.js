@@ -1,27 +1,26 @@
 import React, {Component} from "react";
 import { connect } from 'react-redux';
-import readData from '../actions';
+import {readData} from '../actions';
 import {Link} from "react-router-dom";
-import Card from '../componenets/Card';
+import Card from '../components/Card';
 
 class AboutPage extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      var itemList;
+        list: []
     };
   }
 
   componentDidMount(){
-  const {readData, data} = this.props;
-    readData({})
-    .then(res => this.setState({itemList: res.body}))
-    .catch(err => console.log(err));
-    
+     const {readData, data} = this.props;
+    readData(() => this.setState({list: data}));
   }
 
   render() {
+      const {data} = this.props;
+
     return (
       <div className="container">
         <div className="title"><h1>About</h1></div>
@@ -31,9 +30,9 @@ class AboutPage extends Component {
         out our other projects while you're here.
         </p></div>
         <div>
-      {this.state.itemList.map(() => {
+      {this.state.list.map(item => {
         return (
-          <Card title ={event} location = {links} description= {description}/> 
+          <Card title ={item.event} location = {item.links} description= {item.description}/> 
         );
         })}
       
@@ -43,6 +42,11 @@ class AboutPage extends Component {
     );
   }
 }
-const mapStateToProps = ({ }) => {
-};
-export default connect(mapStateToProps, null)(AboutPage);
+const mapStateToProps = ({ data }) => {
+    return { 
+      event: data.event,
+      description: data.description,
+      links: data.links
+    };
+  };
+export default connect(mapStateToProps, {readData})(AboutPage);
