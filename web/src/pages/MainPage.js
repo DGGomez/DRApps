@@ -32,6 +32,5 @@ class DashboardPage extends Component {
     );
   }
 }
-const mapStateToProps = ({ }) => {
-};
-export default connect(mapStateToProps, null)(DashboardPage);
+
+export default connect(null)(DashboardPage);

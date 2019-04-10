@@ -27,6 +27,5 @@ class Sitemap extends Component {
     );
   }
 }
-const mapStateToProps = ({ }) => {
-};
-export default connect(mapStateToProps, null)(Sitemap);
+
+export default connect(null)(Sitemap);

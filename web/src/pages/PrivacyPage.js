@@ -26,6 +26,5 @@ class PrivaryPage extends Component {
     );
   }
 }
-const mapStateToProps = ({ }) => {
-};
-export default connect(mapStateToProps, null)(PrivaryPage);
+
+export default connect(null)(PrivaryPage);
