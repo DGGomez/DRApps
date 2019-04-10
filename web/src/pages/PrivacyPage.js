@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 
 import {Link} from "react-router-dom";
 
-class AboutPage extends Component {
+class PrivaryPage extends Component {
   constructor(props) {
     super(props);
 
@@ -11,6 +11,7 @@ class AboutPage extends Component {
     };
   }
 
+// Legal statement
 
   render() {
     return (
@@ -27,4 +28,4 @@ class AboutPage extends Component {
 }
 const mapStateToProps = ({ }) => {
 };
-export default connect(mapStateToProps, null)(AboutPage);
+export default connect(mapStateToProps, null)(PrivaryPage);

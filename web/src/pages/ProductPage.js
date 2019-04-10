@@ -4,7 +4,7 @@ import {readData} from '../actions';
 import {Link} from "react-router-dom";
 import Card from '../components/Card';
 
-class AboutPage extends Component {
+class ProductPage extends Component {
   constructor(props) {
     super(props);
 
@@ -14,12 +14,10 @@ class AboutPage extends Component {
   }
 
   componentDidMount(){
-     const {readData, data} = this.props;
-    readData(() => this.setState({list: data}));
+   this.props.readData();
   }
 
   render() {
-      const {data} = this.props;
 
     return (
       <div className="container">
@@ -30,7 +28,7 @@ class AboutPage extends Component {
         out our other projects while you're here.
         </p></div>
         <div>
-      {this.state.list.map(item => {
+      {this.props.data.map(item => {
         return (
           <Card title ={item.event} location = {item.links} description= {item.description}/> 
         );
@@ -44,9 +42,7 @@ class AboutPage extends Component {
 }
 const mapStateToProps = ({ data }) => {
     return { 
-      event: data.event,
-      description: data.description,
-      links: data.links
+      data
     };
   };
-export default connect(mapStateToProps, {readData})(AboutPage);
+export default connect(mapStateToProps, {readData})(ProductPage);
