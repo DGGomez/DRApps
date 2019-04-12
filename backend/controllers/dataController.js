@@ -50,13 +50,13 @@ exports.read = async function(req, res) {
   try{
   var status = 0;
   console.log("hit");
-  mongoose.connection.db.collection("Updates", function(err,orders){
+  mongoose.connection.db.collection("Updates", function(err,Updates){
     if (err){
       console.log(err);
 
       res.send(err);
     }
-    updates.find({}).toArray(function(err, data) {
+    Updates.find({}).toArray(function(err, data) {
       if (err){
         console.log(err);
         res.send(err);
