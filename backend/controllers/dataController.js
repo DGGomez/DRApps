@@ -1,6 +1,6 @@
 'use strict';
 var mongoose = require('mongoose');
-var Updates = mongoose.model('Data');
+var updates = mongoose.model('Data');
 const moment = require('moment');
 const nodemailer = require('nodemailer');
 
@@ -49,15 +49,19 @@ transporter.sendMail(mailOptions, (err, res) => {
 exports.read = async function(req, res) {
   try{
   var status = 0;
+  console.log("hit");
   mongoose.connection.db.collection("Updates", function(err,orders){
     if (err){
+      console.log(err);
+
       res.send(err);
     }
     updates.find({}).toArray(function(err, data) {
       if (err){
+        console.log(err);
         res.send(err);
       }
-
+        console.log(data);
         res.json(data);
       
   });
