@@ -1,8 +1,6 @@
 import React, {Component} from "react";
 import { connect } from 'react-redux';
 
-import {Link} from "react-router-dom";
-
 class PrivaryPage extends Component {
   constructor(props) {
     super(props);
@@ -18,7 +16,7 @@ class PrivaryPage extends Component {
       <div className="container">
         <div className="title"><h1>About</h1></div>
         <div className="body"><p>
-        We don't keep your shit
+        We don't keep your shit. Legal reasons will soon be posted.
         </p></div>
         
       </div>

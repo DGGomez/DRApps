@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import { Provider } from 'react-redux';
+//import { Provider } from 'react-redux';
 import {
   BrowserRouter as Router,
   Route
 } from 'react-router-dom';
-import {connect} from "react-redux";
+//import {connect} from "react-redux";
 
 import DashboardPage from "./pages/MainPage";
 import AboutPage from "./pages/AboutPage";

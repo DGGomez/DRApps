@@ -1,8 +1,6 @@
 import React, {Component} from "react";
 import { connect } from 'react-redux';
 
-import {Link} from "react-router-dom";
-
 class AboutPage extends Component {
   constructor(props) {
     super(props);
@@ -19,9 +17,25 @@ class AboutPage extends Component {
         <div className="body"><p>
         Hello, Welcome to Down Ramp Apps. We are a group of programs that design, create, and maintain apps.
         If you want to buy an app or give us a suggestion go to the contact page and leave us a message. Check
-        out our other projects while you're here.
+        out our other projects while you're here. 
         </p></div>
-        
+        <div className="sourcecode">
+          <p>
+            Check out the source code for some of our projects.
+          </p>
+          <a href="github.com">CODE!</a>
+        </div>
+        <div className="developers">
+          <div className="developer-Daniel">
+              <h1>
+                Hi, I'm Daniel
+              </h1>
+              <p>
+                Hey I'm a Ryerson Computer soon to be grad. I build web apps and mobile apps. I like Machine Learning.
+                I like building stuff and hope you guys can use some of the stuff I'm building.
+              </p>
+          </div>
+        </div>
       </div>
 
     );

@@ -21,11 +21,13 @@ class DashboardPage extends Component {
       </div>
       <div class="form-group">
           <div><p>Take a look at our blog.</p></div>
+          <Link to ="/product" className="btn btn-default btn-lg btn-block">Events/Products</Link>
       </div>
       <div class="form-group">
           <div><p>Got any cool ideas let us know. Got any comments or concerns leave us a message.
             You can even buy one of our apps. Anyway hope you enjoy our stuff!
-            </p></div>
+            </p>
+            <Link to ="/contact" className="btn btn-default btn-lg btn-block">Contact Us</Link>            </div>
       </div> 
       </div>
 
