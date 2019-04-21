@@ -24,6 +24,7 @@ class App extends Component {
         <div className="container">
           <Router>
             <div style={{ marginTop: '7rem' }}>
+                <img src="./DownRampAppsLogo.png"/>
                 <NavBar />
                 <Route path="/" exact component={DashboardPage} />
                 <Route path="/dashboard" exact component={DashboardPage} />
