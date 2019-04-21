@@ -15,6 +15,9 @@
   padding: 19px 20px;
   text-transform: capitalize;
 }
+.nav-div{
+  background-image: url("DownRampAppsLogo.png");
+}
 .menuCon{
   width: calc(100% - 150px);
   float: left;

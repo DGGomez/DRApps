@@ -6,9 +6,6 @@ class LeftMenu extends Component {
   render() {
     return (
    <Menu mode="horizontal">
-       <Menu.Item key="home">
-          <a href="/">Home</a>
-        </Menu.Item>
         <Menu.Item key="product">
           <a href="/product">Products</a>
         </Menu.Item>

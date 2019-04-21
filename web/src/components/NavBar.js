@@ -18,11 +18,13 @@ onClose = () => {
   };
 render() {
     return (
-        <div>
-        <div className="profile-body__container"><h1>Welcome to Down Ramp Apps</h1></div>
+      <div className="nav-logo"><img src="./DownRampAppsLogo.png"/>
+
+
+        <div className="profile-body__container">
         <nav className="menuBar">
           <div className="logo">
-            <a href="/">logo</a>
+            <a href="/">Home</a>
           </div>
           <div className="menuCon">
             <div className="leftMenu">
@@ -42,6 +44,7 @@ render() {
             </Drawer>
 </div>
         </nav>
+        </div>
         </div>
     );
   }

@@ -22,10 +22,12 @@ class App extends Component {
   render() {
     return (
         <div className="container">
+        <div className="nav">
+          <NavBar />
+          </div>
           <Router>
             <div style={{ marginTop: '7rem' }}>
-                <img src="./DownRampAppsLogo.png"/>
-                <NavBar />
+
                 <Route path="/" exact component={DashboardPage} />
                 <Route path="/dashboard" exact component={DashboardPage} />
                 <Route path="/contact" exact component={ContactPage} />
@@ -33,9 +35,12 @@ class App extends Component {
                 <Route path="/product" exact component={ProductPage} />
                 <Route path="/privacy" exact component={PrivacyPage} />
                 <Route path="/sitemap" exact component={Sitemap} />
-                <Footer/>
+               
             </div>
           </Router> 
+          <div className="footer">
+          <Footer/>
+          </div>
         </div>
     );
   }
