@@ -18,13 +18,15 @@ onClose = () => {
   };
 render() {
     return (
-      <div className="nav-logo"><img src="./DownRampAppsLogo.png"/>
-
+      <div className="navbar navbar-inverse bg-inverse navbar-fixed-top">
 
         <div className="profile-body__container">
         <nav className="menuBar">
           <div className="logo">
-            <a href="/">Home</a>
+            <a href="/"><strong>
+                                <img className="logo" align="left" src="./DownRampAppsLogo.png" alt="react-logo"/>
+                                DRA
+                            </strong></a>
           </div>
           <div className="menuCon">
             <div className="leftMenu">
