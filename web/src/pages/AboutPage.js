@@ -23,8 +23,13 @@ class AboutPage extends Component {
           <p>
             Check out the source code for some of our projects.
           </p>
-          <a href="github.com">CODE!</a>
-        </div>
+          <a
+          className="App-link"
+          href="https://github.com/DGGomez"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Code!</a>        
+          </div>
         <div className="developers">
           <div className="developer-Daniel">
               <h1>

@@ -16,7 +16,8 @@ class DashboardPage extends Component {
     return (
       <div className="container center-block">
           <div>
-        <img className="center-block form-group" src="./images/logo_2.png" alt="react-logo"/>
+        <img className="center-block form-group" width = "500" height="300" align="center" src="./DownRampAppsLogo.png" alt="logo"/>
+
       </div>
       <div class="header"><h1>Welcome</h1></div>
       <div class="form-group">

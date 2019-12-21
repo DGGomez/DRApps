@@ -16,9 +16,9 @@ exports.send = async function(req, res) {
 
   try{
    var response = {
-    name: req.body.name,
-    email: req.body.email,
-    message: req.body.message
+    name: req.body.user,
+    email: req.body.sender,
+    message: req.body.msg
   }
   
   var mailOptions = {

@@ -1,4 +1,10 @@
 @import '~antd/dist/antd.css';
+nav{
+  height: 100px
+}
+.container{
+  top: 200 px
+}
 .menuBar{
   padding: 0 20px;
   border-bottom: solid 1px #e8e8e8;
@@ -9,6 +15,7 @@
   width: 150px;
   float: left;
 }
+div{margin-top:30px;}
 .logo a{
   display: inline-block;
   font-size: 20px;

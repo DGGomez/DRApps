@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { Form, FormGroup, Input, Label, Button } from 'reactstrap';
 import axios from 'axios';
 import {connect} from "react-redux";
+//import { withCookies, Cookies } from 'react-cookie';
+import {contact} from "../actions";
 
 class ContactPage extends Component {
   constructor(props) {
@@ -12,6 +14,8 @@ class ContactPage extends Component {
         message: '',
         email: '',
     }
+    //this.state.csrfToken = cookies.get('XSRF-TOKEN');
+
     this.handleChange = this.handleChange.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this)
   }
@@ -22,10 +26,10 @@ class ContactPage extends Component {
 
   async handleSubmit(e){
       e.preventDefault()
-      const { name, email, message } = this.state
-      const form = await axios.post('/send',{
-          name,email,message
-      })
+      const { name, email, message, csrfToken } = this.state
+      const { contact, history } = this.props;
+      contact(name, email, message, csrfToken, () => history.push("/"));
+
   }
   render() {
     return (
@@ -60,4 +64,5 @@ class ContactPage extends Component {
   }
 }
 
-export default connect(null)(ContactPage);
+//export default withCookies(connect(null, { contact })(ContactPage));
+export default connect(null, {contact})(ContactPage)
